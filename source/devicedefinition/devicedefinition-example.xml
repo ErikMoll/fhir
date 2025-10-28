@@ -10,7 +10,7 @@
 		<type>
 			<coding>
 				<system value="http://hl7.org/fhir/device-nametype"/>
-				<code value="manufacturer-name"/>
+				<code value="registered-name"/>
 			</coding>
 		</type>
 	</deviceName>
@@ -28,7 +28,7 @@
 	</deviceVersion>
 	<url value="http://example.org/fhir/DeviceDefinition/exampleDevice"/>
 	<hasPart>
-		<reference value="DeviceDefinition/example"/>
+		<reference value="DeviceDefinition/example-prodspec"/>
 	</hasPart>
 	<manufacturer>
 		<reference value="Organization/example"/>
@@ -38,8 +38,10 @@
 	<publisher value="HL7 International"/>
 	<conformsTo>
 		<specification>
-			<system value="urn:iso:std:iso:11073:10101"/>
-			<version value="MDC_DEV_SPEC_GENERIC"/>
+			<coding>
+				<system value="urn:iso:std:iso:11073:10101"/>
+				<code value="MDC_DEV_SPEC_GENERIC"/>
+			</coding>
 		</specification>
 		<version value="3.0"/>
 		<category>
